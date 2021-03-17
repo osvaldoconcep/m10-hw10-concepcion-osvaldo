@@ -1,26 +1,26 @@
 // It is always helpful to use comments in your code!
 
-printBoilingTemp = () => {
+const printBoilingTemp = () => {
   document.getElementById('boiling-temp').innerText = '212';
 };
 
-printFreezingTemp = () => {
+const printFreezingTemp = () => {
     document.getElementById('freezing-temp').innerText = '32';
 };
 
-printWaterTemp = () => {
+const printWaterTemp = () => {
     document.getElementById('water-temp').innerText = '11';
 };
 
-addClass = (elementId, className) => {
+const addClass = (elementId, className) => {
     document.getElementById(elementId).classList.add(className);
 };
 
-removeClass = (elementId, className) => {
+const removeClass = (elementId, className) => {
     document.getElementById(elementId).classList.remove(className);
 };
 
-showMessageBasedOnWaterTemperature = () => {
+const showMessageBasedOnWaterTemperature = () => {
     setTimeout(() => {
         const waterTemp = parseInt(document.getElementById('water-temp').innerText);
         let elementId;
