@@ -24,15 +24,20 @@ const showMessageBasedOnWaterTemperature = () => {
     setTimeout(() => {
         const waterTemp = parseInt(document.getElementById('water-temp').innerText);
         let elementId;
+        let color;
         if (waterTemp > 212) {
             elementId = 'boiling';
+            color = 'lightcoral';
         } else if (waterTemp < 32) {
             elementId = 'frozen';
+            color = 'lightcyan';
         } else {
             elementId = 'good-temp';
+            color = 'lightyellow';
         }
         removeClass(elementId, 'hide');
         addClass(elementId, 'show');
+        document.body.style.backgroundColor = color;
     }, 3000);
 };
 

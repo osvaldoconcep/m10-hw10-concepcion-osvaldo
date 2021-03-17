@@ -1,4 +1,7 @@
-
+body {
+  padding: 2rem;
+  font-family: 'Lobster', cursive;
+}
 .hide {
   opacity: 0;
 }
